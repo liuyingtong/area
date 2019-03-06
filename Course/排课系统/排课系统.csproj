@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{148B19E8-653B-4816-9604-6C4645DDED9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>排课系统</RootNamespace>
+    <AssemblyName>排课系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="排课系统, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="课表查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="课表查询.Designer.cs">
+      <DependentUpon>课表查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paikeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>paikeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="设置排课时间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="设置排课时间.Designer.cs">
+      <DependentUpon>设置排课时间.cs</DependentUpon>
+    </Compile>
+    <Compile Include="课程优先级设立.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="课程优先级设立.Designer.cs">
+      <DependentUpon>课程优先级设立.cs</DependentUpon>
+    </Compile>
+    <Compile Include="课程信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="课程信息.Designer.cs">
+      <DependentUpon>课程信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MergeDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MergeDataGridView.Designer.cs">
+      <DependentUpon>MergeDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员回复.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员回复.Designer.cs">
+      <DependentUpon>管理员回复.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调课界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调课界面.Designer.cs">
+      <DependentUpon>调课界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员会话界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员会话界面.Designer.cs">
+      <DependentUpon>管理员会话界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师提交申请界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师提交申请界面.Designer.cs">
+      <DependentUpon>教师提交申请界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师联系方式.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师联系方式.Designer.cs">
+      <DependentUpon>教师联系方式.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师排课信息录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师排课信息录入.Designer.cs">
+      <DependentUpon>教师排课信息录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员界面.Designer.cs">
+      <DependentUpon>管理员界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="老师界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="老师界面.Designer.cs">
+      <DependentUpon>老师界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录界面.Designer.cs">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="课表查询.resx">
+      <DependentUpon>课表查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="设置排课时间.resx">
+      <DependentUpon>设置排课时间.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="课程优先级设立.resx">
+      <DependentUpon>课程优先级设立.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="课程信息.resx">
+      <DependentUpon>课程信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员回复.resx">
+      <DependentUpon>管理员回复.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调课界面.resx">
+      <DependentUpon>调课界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员会话界面.resx">
+      <DependentUpon>管理员会话界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师提交申请界面.resx">
+      <DependentUpon>教师提交申请界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师联系方式.resx">
+      <DependentUpon>教师联系方式.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师排课信息录入.resx">
+      <DependentUpon>教师排课信息录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员界面.resx">
+      <DependentUpon>管理员界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="老师界面.resx">
+      <DependentUpon>老师界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录界面.resx">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="paikeDataSet.xsc">
+      <DependentUpon>paikeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="paikeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>paikeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="paikeDataSet.xss">
+      <DependentUpon>paikeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
